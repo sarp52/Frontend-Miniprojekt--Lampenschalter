@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Die Seitensprache wird auf Deutsch eingestellt. -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Licht An / Aus</title> <!-- Die Seitentitel wird auf "Licht An / Aus" gesetzt. -->
+    <style>
+      /* CSS-Stile für Links */
+      a {
+        background-color: green; /* Der Hintergrund der Links wird grün gemacht. */
+        color: #fff; /* Die Textfarbe der Links wird weiß eingestellt. */
+        text-decoration: none; /* Die Unterstreichung der Links wird entfernt. */
+        font-family: Arial, Helvetica, sans-serif; /* Die Schriftart wird auf Arial, Helvetica, sans-serif gesetzt. */
+        font-size: 20px; /* Die Schriftgröße wird auf 20px festgelegt. */
+        padding: 10px 40px; /* Der Innenabstand der Links beträgt 10px oben/unten und 40px links/rechts. */
+        margin: 30px; /* Der Abstand zwischen den Links beträgt 30px. */
+        border-radius: 10px; /* Die Links werden abgerundet. */
+      }
+
+      /* CSS-Stile für den gesamten Seiteninhalt */
+      body {
+        margin: 20px; /* Der Seiteninhalt wird 20px vom Rand entfernt. */
+      }
+
+      /* CSS-Stile für Bilder */
+      img {
+        width: 450px; /* Die Bildbreite beträgt 450px. */
+        height: auto; /* Die Höhe wird automatisch angepasst. */
+        border: 1px solid #000; /* Ein 1-Pixel-Rahmen mit schwarzem Rand um das Bild wird hinzugefügt. */
+        border-radius: 10px; /* Die Ecken des Bildes werden abgerundet. */
+      }
+    </style>
+  </head>
+
+  <body>
+    <center> <!-- Der Seiteninhalt wird zentriert. -->
+      <!-- Der Link "An" löst JavaScript-Code aus, um das Licht einzuschalten. -->
+      <a
+        href="#"
+        onclick="document.getElementById('lampe').src='lampe_an.jpg'">An</a>
+      <!-- Der Link "Aus" löst JavaScript-Code aus, um das Licht auszuschalten. -->
+      <a
+        href="#"
+        onclick="document.getElementById('lampe').src='lampe_aus.jpg'">Aus</a>
+      <br /><br />
+
+      <img id="lampe" src="lampe_aus.jpg" /> <!-- Es werden zwei Links und ein Bild der Lampe hinzugefügt. -->
+    </center>
+  </body>
+</html>
